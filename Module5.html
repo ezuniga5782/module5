@@ -9,6 +9,7 @@
     <br><br>
     <form method=“post” action=“process.php” id="numform"
         oninput="x.value=parseInt(a.value)+parseInt(b.value)">
+
         <input type="text" name="query"><br>
 
         <input type="checkbox" name="pet1" value="dog">I have a dog<br>
@@ -55,11 +56,29 @@
 
         <br><br>
 
+        <input list="browsers">
+
+        <datalist id="browsers">
+            <option value="Internet Explorer">Internet Explorer</option>
+            <option value="Firefox">Firefox</option>
+            <option value="Chrome">Chrome</option>
+            <option value="Opera">Opera</option>
+            <option value="Safari">Safari</option>
+        </datalist>
+        <br><br>
+
         <button>Click here!</button><br>
         <input type="submit" value="Submit">
 
     </form>
     <br><br>
+
+    <fieldset>
+        <legend>Demographic</legend>
+        Name: <input type="text"><br>
+        Email: <input type="email"><br>
+        Date of birth: <input type="text">
+    </fieldset>
 
 </body>
 </html>
